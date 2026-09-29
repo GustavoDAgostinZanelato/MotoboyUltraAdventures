@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Motoboy Ultra Adventures</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.motoboyultraadventures.game</app-id>
+    <unique-id>wl9loagt0o33</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1600</width>
+        <height>900</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="bgCeu" sid="900000000000001">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9000000000000011" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gusta\Downloads\jogoTutorialConstruct2.capx (2)\jogoTutorialConstruct2.capx\Files\Cenario\bg_sky_fase1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bgPredios" sid="900000000000011">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9000000000000111" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gusta\Downloads\jogoTutorialConstruct2.capx (2)\jogoTutorialConstruct2.capx\Files\Cenario\bg_predios_fase1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="letreiroNeon1" sid="900000000000021">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9000000000000211" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gusta\Downloads\jogoTutorialConstruct2.capx (2)\jogoTutorialConstruct2.capx\Files\Cenario\bg_letreiro_neon_1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="letreiroNeon2" sid="900000000000031">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9000000000000311" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gusta\Downloads\jogoTutorialConstruct2.capx (2)\jogoTutorialConstruct2.capx\Files\Cenario\bg_letreiro_neon_2.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="letreiroNeon3" sid="900000000000041">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9000000000000411" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gusta\Downloads\jogoTutorialConstruct2.capx (2)\jogoTutorialConstruct2.capx\Files\Cenario\bg_letreiro_neon_3.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="letreiroNeon4" sid="900000000000051">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9000000000000511" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\gusta\Downloads\jogoTutorialConstruct2.capx (2)\jogoTutorialConstruct2.capx\Files\Cenario\bg_letreiro_neon_4.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+
+        <object-type name="colisaoPlatformaJogo" sid="275197058272209">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="283605700728146">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+            <tiles />
+        </object-type>
+        <object-type name="enfeitaPlataformaJogo" sid="703277065814206">
+            <plugin id="Tilemap" />
+            <texture original-source="C:\Users\gusta\OneDrive - SATC - Associação Beneficente da Indústria Carbonífera de Santa Catarina\Faculdade Eng. Software\Quarta Fase\Desenvolvimento de Jogos\Assets Jogo\kenney_abstract-platformer\Tilesheet\tilesheet_complete.png" />
+            <tiles />
+        </object-type>
+        <object-type name="moto" sid="571148524355728">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="825593899283070">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="290278619431463">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="110255038119282" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Downloads\sprint\sprint\1-idle\idle_1_transparente.png">
+                        <collision-poly>
+                            <point x="0.310302" y="0.033811" />
+                            <point x="0.536903" y="0.033811" />
+                            <point x="0.714785" y="0.033811" />
+                            <point x="0.745377" y="0.311990" />
+                            <point x="0.719318" y="0.661887" />
+                            <point x="0.536903" y="0.835749" />
+                            <point x="0.462125" y="0.455426" />
+                            <point x="0.428134" y="0.311990" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Downloads\sprint\sprint\1-idle\idle_2_transparente.png">
+                        <collision-poly>
+                            <point x="0.349465" y="0.167579" />
+                            <point x="0.531805" y="0.029086" />
+                            <point x="0.592056" y="0.354667" />
+                            <point x="0.682433" y="0.434848" />
+                            <point x="0.780738" y="0.806593" />
+                            <point x="0.531805" y="0.835749" />
+                            <point x="0.282872" y="0.806593" />
+                            <point x="0.338366" y="0.434848" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="Wheelie" pingpong="0" repeatcount="1" repeatto="0" sid="148479309141788" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Downloads\sprint\sprint\6-empinando\wheelie_1.png">
+                        <collision-poly>
+                            <point x="0.517913" y="0.227600" />
+                            <point x="0.618125" y="0.281619" />
+                            <point x="0.698083" y="0.445418" />
+                            <point x="0.756718" y="0.835749" />
+                            <point x="0.517913" y="0.771275" />
+                            <point x="0.295858" y="0.834006" />
+                            <point x="0.379320" y="0.445418" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Downloads\sprint\sprint\6-empinando\wheelie_2.png">
+                        <collision-poly>
+                            <point x="0.395623" y="0.330941" />
+                            <point x="0.529586" y="0.353212" />
+                            <point x="0.663549" y="0.330941" />
+                            <point x="0.749880" y="0.563549" />
+                            <point x="0.581683" y="0.662531" />
+                            <point x="0.529586" y="0.734293" />
+                            <point x="0.373296" y="0.835749" />
+                            <point x="0.318222" y="0.563549" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Downloads\sprint\sprint\6-empinando\wheelie_3.png">
+                        <collision-poly>
+                            <point x="0.373984" y="0.262155" />
+                            <point x="0.534853" y="0.333854" />
+                            <point x="0.662553" y="0.313369" />
+                            <point x="0.757084" y="0.520785" />
+                            <point x="0.594557" y="0.625773" />
+                            <point x="0.534853" y="0.835749" />
+                            <point x="0.441980" y="0.676987" />
+                            <point x="0.322572" y="0.520785" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Downloads\sprint\sprint\6-empinando\wheelie_4.png">
+                        <collision-poly>
+                            <point x="0.278608" y="0.133107" />
+                            <point x="0.511834" y="0.224425" />
+                            <point x="0.644495" y="0.252327" />
+                            <point x="0.727943" y="0.419744" />
+                            <point x="0.612399" y="0.551648" />
+                            <point x="0.511834" y="0.835749" />
+                            <point x="0.471180" y="0.480623" />
+                            <point x="0.347078" y="0.419744" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="Running" pingpong="0" repeatcount="1" repeatto="0" sid="961864850813920" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Downloads\sprint\sprint\2-acelerando\acelerando_1.png">
+                        <collision-poly>
+                            <point x="0.247042" y="0.311595" />
+                            <point x="0.461538" y="0.263286" />
+                            <point x="0.624260" y="0.398551" />
+                            <point x="0.686390" y="0.497585" />
+                            <point x="0.770710" y="0.835749" />
+                            <point x="0.461538" y="0.760870" />
+                            <point x="0.286982" y="0.618358" />
+                            <point x="0.325444" y="0.497585" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Downloads\sprint\sprint\2-acelerando\acelerando_2.png">
+                        <collision-poly>
+                            <point x="0.269231" y="0.352657" />
+                            <point x="0.467456" y="0.171498" />
+                            <point x="0.639053" y="0.396136" />
+                            <point x="0.692307" y="0.492754" />
+                            <point x="0.789941" y="0.835749" />
+                            <point x="0.467456" y="0.763285" />
+                            <point x="0.334319" y="0.526570" />
+                            <point x="0.298816" y="0.492754" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Downloads\sprint\sprint\2-acelerando\acelerando_3.png">
+                        <collision-poly>
+                            <point x="0.183432" y="0.335748" />
+                            <point x="0.414201" y="0.166667" />
+                            <point x="0.633136" y="0.357488" />
+                            <point x="0.707101" y="0.468599" />
+                            <point x="0.788461" y="0.835749" />
+                            <point x="0.414201" y="0.792270" />
+                            <point x="0.220415" y="0.543478" />
+                            <point x="0.294379" y="0.468599" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Downloads\sprint\sprint\2-acelerando\acelerando_4.png">
+                        <collision-poly>
+                            <point x="0.258876" y="0.270532" />
+                            <point x="0.476331" y="0.140097" />
+                            <point x="0.624260" y="0.384058" />
+                            <point x="0.713018" y="0.500000" />
+                            <point x="0.758876" y="0.835749" />
+                            <point x="0.476331" y="0.751208" />
+                            <point x="0.261834" y="0.724638" />
+                            <point x="0.295858" y="0.500000" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="Jumping" pingpong="0" repeatcount="1" repeatto="0" sid="842865323664385" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Downloads\sprint\sprint\5-pulo\05_pulo_salto_1.png">
+                        <collision-poly>
+                            <point x="0.529586" y="0.115942" />
+                            <point x="0.517751" y="0.115942" />
+                            <point x="0.502959" y="0.120773" />
+                            <point x="0.687870" y="0.760870" />
+                            <point x="0.517751" y="0.661836" />
+                            <point x="0.328402" y="0.792271" />
+                            <point x="0.357988" y="0.289855" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Downloads\sprint\sprint\5-pulo\05_pulo_salto_2.png">
+                        <collision-poly>
+                            <point x="0.431953" y="0.243961" />
+                            <point x="0.500000" y="0.171498" />
+                            <point x="0.585799" y="0.214976" />
+                            <point x="0.733728" y="0.548309" />
+                            <point x="0.464497" y="0.683575" />
+                            <point x="0.500000" y="0.666667" />
+                            <point x="0.593195" y="0.589372" />
+                            <point x="0.323964" y="0.548309" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Downloads\sprint\sprint\5-pulo\05_pulo_salto_3.png">
+                        <collision-poly>
+                            <point x="0.368343" y="0.330918" />
+                            <point x="0.510355" y="0.236715" />
+                            <point x="0.615385" y="0.391305" />
+                            <point x="0.403846" y="0.756039" />
+                            <point x="0.396450" y="0.763285" />
+                            <point x="0.510355" y="0.654590" />
+                            <point x="0.637574" y="0.741546" />
+                            <point x="0.300296" y="0.756039" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Downloads\sprint\sprint\5-pulo\05_pulo_salto_4.png">
+                        <collision-poly>
+                            <point x="0.541420" y="0.108696" />
+                            <point x="0.428994" y="0.176328" />
+                            <point x="0.573964" y="0.243961" />
+                            <point x="0.714497" y="0.777778" />
+                            <point x="0.505917" y="0.685990" />
+                            <point x="0.322485" y="0.736715" />
+                            <point x="0.389053" y="0.243961" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="114012773472262">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="textScore" sid="755562088246792">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="comida" sid="259621203085812">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="923848835928106" speed="5">
+                    <frame duration="1" hotspotX="0.496504" hotspotY="0.502415" original-source="C:\Users\Usuario\Downloads\jogoTutorialConstruct2.capx\Files\comida.png">
+                        <collision-poly>
+                            <point x="0.202797" y="0.297101" />
+                            <point x="0.494755" y="0.0603865" />
+                            <point x="0.763986" y="0.330918" />
+                            <point x="0.991259" y="0.502415" />
+                            <point x="0.891608" y="0.850242" />
+                            <point x="0.494755" y="0.886473" />
+                            <point x="0.195804" y="0.717391" />
+                            <point x="0.027972" y="0.502415" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="3" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable comment="Grau" constant="0" name="IsWheelie" sid="848640764448072" static="0" type="number">0</variable>
+        <variable comment="Sistema de Pontuacao" constant="0" name="Score" sid="901205200253761" static="0" type="number">0</variable>
+        <comment>Valores Globais do Sistema</comment>
+        <event-block sid="236006862782520">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="645253102683022" type="comida">
+                    <param id="0" name="Object">moto</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="161718631323397" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">100</param>
+                </action>
+                <action id="-9" name="Destroy" sid="828862774381785" type="comida" />
+                <action id="0" name="Set text" sid="787119647212712" type="textScore">
+                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="300479903201360">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="899829986931903" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="459510515507385" type="System">
+                    <param id="0" name="Variable">IsWheelie</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="684904740525604">
+            <conditions>
+                <condition id="3" name="On key released" sid="192688534031763" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="970538691493222" type="System">
+                    <param id="0" name="Variable">IsWheelie</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Movimentos e Set Animations</comment>
+        <event-block sid="429919611552811">
+            <conditions>
+                <condition behavior="Platform" id="2" inverted="1" name="Is on floor" sid="776246515618950" type="moto" />
+                <condition id="2" inverted="1" name="Is playing" sid="790020705788109" type="moto">
+                    <param id="0" name="Animation">&quot;Jumping&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="639821931189954" type="moto">
+                    <param id="0" name="Animation">&quot;Jumping&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="595584529972751">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="531202063851385" type="moto" />
+                <condition id="-14" name="Compare variable" sid="886225912414987" type="System">
+                    <param id="0" name="Variable">IsWheelie</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="2" inverted="1" name="Is playing" sid="395386352865020" type="moto">
+                    <param id="0" name="Animation">&quot;Wheelie&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="306199400647001" type="moto">
+                    <param id="0" name="Animation">&quot;Wheelie&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="271098962643239">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="618955176885973" type="moto" />
+                <condition id="-14" name="Compare variable" sid="278502967604335" type="System">
+                    <param id="0" name="Variable">IsWheelie</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition behavior="Platform" id="0" name="Is moving" sid="273043144163120" type="moto" />
+                <condition id="2" inverted="1" name="Is playing" sid="644409591718643" type="moto">
+                    <param id="0" name="Animation">&quot;Running&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="825325482556347" type="moto">
+                    <param id="0" name="Animation">&quot;Running&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="821415781456837">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="216969312456315" type="moto" />
+                <condition id="-14" name="Compare variable" sid="623760657345618" type="System">
+                    <param id="0" name="Variable">IsWheelie</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="445336024968270" type="moto" />
+                <condition id="2" inverted="1" name="Is playing" sid="442055958099797" type="moto">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="451331863650167" type="moto">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="639086924105916">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="652743485931111" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="225061281585138" type="moto">
+                    <param id="0" name="Animation">&quot;Wheelie&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="986854876808065" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="0" name="Set text" sid="734200434032601" type="textScore">
+                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
