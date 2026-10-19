@@ -13,11 +13,11 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -138,31 +138,8 @@
             </animation-folder>
         </object-type>
 
-        <object-type name="colisaoPlatformaJogo" sid="275197058272209">
-            <plugin id="Tilemap" />
-            <behaviors>
-                <behavior-type name="Solid" sid="283605700728146">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <texture />
-            <tiles />
-        </object-type>
-        <object-type name="enfeitaPlataformaJogo" sid="703277065814206">
-            <plugin id="Tilemap" />
-            <texture original-source="C:\Users\gusta\OneDrive - SATC - Associação Beneficente da Indústria Carbonífera de Santa Catarina\Faculdade Eng. Software\Quarta Fase\Desenvolvimento de Jogos\Assets Jogo\kenney_abstract-platformer\Tilesheet\tilesheet_complete.png" />
-            <tiles />
-        </object-type>
         <object-type name="moto" sid="571148524355728">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Platform" sid="825593899283070">
-                    <behavior id="Platform" />
-                </behavior-type>
-                <behavior-type name="ScrollTo" sid="290278619431463">
-                    <behavior id="scrollto" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="110255038119282" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Downloads\sprint\sprint\1-idle\idle_1_transparente.png">
@@ -342,9 +319,6 @@
         <object-type name="Keyboard" sid="114012773472262">
             <plugin id="Keyboard" />
         </object-type>
-        <object-type name="textScore" sid="755562088246792">
-            <plugin id="Text" />
-        </object-type>
         <object-type name="comida" sid="259621203085812">
             <plugin id="Sprite" />
             <animation-folder>
@@ -364,14 +338,202 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="motoCol" sid="410000000000327">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="410000000000328">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="410000000000329">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410000000000330" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\motoCol\Default\000.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chao" sid="410000000000331">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="410000000000332">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410000000000333" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\chao\Default\000.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\chao\Default\001.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\chao\Default\002.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="plataforma" sid="410000000000334">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="410000000000335">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410000000000336" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\plataforma\Default\000.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bloco" sid="410000000000337">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="410000000000338">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410000000000339" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\bloco\Default\000.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="espinho" sid="410000000000340">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410000000000341" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\espinho\Default\000.png">
+                        <collision-poly><point x="0.08" y="0.3" /><point x="0.92" y="0.3" /><point x="0.92" y="1" /><point x="0.08" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lombada" sid="410000000000342">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="410000000000343">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410000000000344" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\lombada\Default\000.png">
+                        <collision-poly><point x="0" y="1" /><point x="0.25" y="0" /><point x="0.75" y="0" /><point x="1" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="muro" sid="410000000000345">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="410000000000346">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410000000000347" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\muro\Default\000.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chegada" sid="410000000000348">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410000000000349" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\chegada\Default\000.png">
+                        <collision-poly><point x="0.05" y="0.25" /><point x="0.95" y="0.25" /><point x="0.95" y="1" /><point x="0.05" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="iconeLanche" sid="410000000000350">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410000000000351" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\iconeLanche\Default\000.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\iconeLanche\Default\001.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\iconeLanche\Default\002.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\iconeLanche\Default\003.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="barraLancheFundo" sid="410000000000352">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410000000000353" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\barraLancheFundo\Default\000.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="barraLanche" sid="410000000000354">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410000000000355" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="Animations\barraLanche\Default\000.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="painelResultado" sid="410000000000356">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410000000000357" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\painelResultado\Default\000.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="textScore" sid="410000000000358">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="textTempo" sid="410000000000359">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="textCombo" sid="410000000000360">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="textLanche" sid="410000000000361">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="textFx" sid="410000000000362">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="textResultado" sid="410000000000363">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="textDica" sid="410000000000364">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>Fase1.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Jogo.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="3" />
