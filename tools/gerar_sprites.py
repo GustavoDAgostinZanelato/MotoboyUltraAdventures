@@ -366,6 +366,32 @@ def painel():
     return im
 
 
+# ---- rampa de salto (W x H em pixels de arte; superfície sobe da esquerda p/ direita) ----
+def rampa(W, H):
+    im = tela(W, H)
+    for x in range(W):
+        topo = H - round((x + 1) * H / W)
+        for y in range(topo, H):
+            d = y - topo
+            if d == 0:
+                c = CY                                  # neon da superfície
+            elif d <= 2:
+                c = D6 if (x // 6) % 3 else YL          # chapa com marcas amarelas
+            elif d == 3:
+                c = INK
+            else:
+                c = D3 if ((x + y) // 6) % 2 == 0 else D2   # estrutura metálica
+            if y >= H - 2:
+                c = INK if y == H - 1 else D1
+            px(im, x, y, c)
+    for y in range(H):                                  # face traseira com listras de perigo
+        topo = H - round(H)
+        for x in range(W - 3, W):
+            if im.getpixel((x, y))[3]:
+                px(im, x, y, YL if ((x + y) // 3) % 2 == 0 else INK)
+    return im
+
+
 def moto_col():
     return tela(25, 15)
 
@@ -385,6 +411,8 @@ def main():
     info["barraLancheFundo"] = salvar(barra_fundo(), "barraLancheFundo")
     info["barraLanche"] = salvar(barra_fill(), "barraLanche")
     info["painelResultado"] = salvar(painel(), "painelResultado")
+    info["rampa"] = salvar(rampa(96, 32), "rampa")
+    info["rampaG"] = salvar(rampa(128, 48), "rampaG")
     info["motoCol"] = salvar(moto_col(), "motoCol")
     for k, v in info.items():
         print(k, v)

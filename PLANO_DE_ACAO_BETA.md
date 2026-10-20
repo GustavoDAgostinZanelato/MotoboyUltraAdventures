@@ -64,3 +64,13 @@ Decisões já tomadas pela equipe:
 Os tiles do pacote Kenney (uso livre) foram substituídos por arte própria em pixel art, no estilo cyberpunk/entardecer do jogo (paleta dos prédios do cenário: roxos escuros `#1a102e`/`#211438`, neon ciano `#5af0ff`, magenta `#ff5adc`, amarelo `#ffd25a`).
 O gerador está em `tools/gerar_sprites.py` — rode `python tools/gerar_sprites.py` para regenerar todos os PNGs:
 `chao`, `plataforma`, `bloco`, `espinho`, `lombada`, `muro`, `chegada`, ícone/barra do lanche e painel de resultado.
+
+## Revisão de mecânicas + Fase 1 tutorial (inspirado em Urban Trial Playground)
+Gerador: `python tools/gerar_fase_tutorial.py` (regera `Layouts/Fase1.xml`, `Event sheets/Jogo.xml` e adiciona `rampa`/`rampaG` ao `.caproj`).
+
+- **A moto sempre anda para frente** (velocidade 340). D/→ = turbo (480), A/← = freio (150), só no chão; no ar a velocidade se mantém.
+- **Não existe mais tecla de pulo.** Só as rampas lançam a moto: o impulso cresce com a velocidade e com o tamanho da rampa (`rampa` ×1,0; `rampaG` ×1,4). Frear na rampa = salto curto (cai no vão).
+- **Giro no ar mais rápido** (450°/s, antes 280°/s) e, sem nenhuma seta, o bico desce devagar (25°/s) para ajudar no pouso.
+- **Novos danos ao lanche:** solavanco de lombada em velocidade (−2/−4), impacto do pouso proporcional à altura da queda, além de flip, pouso ruim, espinho e muro. Muro e espinho devolvem ao último ponto seguro.
+- **Fase 1 = tutorial** (8000 px, 55 s), com dicas na tela conforme a posição: acelerar/frear → lombada → wheelie → 1ª rampa sobre vão → pouso → rampa com flip → combo → espinhos sob rampa → muro sob rampa → rampão final (flip duplo) → chegada.
+- As Fases 2 e 3 do Sprint 2 ainda não foram refeitas para o salto por rampas.

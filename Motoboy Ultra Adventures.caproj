@@ -527,6 +527,36 @@
         <object-type name="textDica" sid="410000000000364">
             <plugin id="Text" />
         </object-type>
+        <object-type name="rampa" sid="430000000000461">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="430000000000462">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="430000000000463" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\rampa\Default\000.png">
+                        <collision-poly><point x="0" y="1" /><point x="1" y="0" /><point x="1" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rampaG" sid="430000000000464">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="430000000000465">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="430000000000466" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\rampaG\Default\000.png">
+                        <collision-poly><point x="0" y="1" /><point x="1" y="0" /><point x="1" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
