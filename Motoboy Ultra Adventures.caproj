@@ -11,6 +11,7 @@
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
@@ -557,16 +558,117 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="textTitulo2" sid="700000000000113">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="textOp1" sid="700000000000114">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="textOp2" sid="700000000000115">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="textOp3" sid="700000000000116">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="textRodape" sid="700000000000117">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="textCorpo" sid="700000000000118">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="logoMenu" sid="700000000000107">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700000000000108" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\logoMenu\Default\000.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botaoSel" sid="700000000000111">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700000000000112" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\botaoSel\Default\000.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botaoJogar" sid="700000000000134">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700000000000135" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\botaoJogar\Default\000.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botaoComo" sid="700000000000136">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700000000000137" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\botaoComo\Default\000.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botaoCreditos" sid="700000000000138">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700000000000139" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\botaoCreditos\Default\000.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botaoVoltar" sid="700000000000140">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700000000000141" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\botaoVoltar\Default\000.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="modalPainel" sid="700000000000142">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700000000000143" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="Animations\modalPainel\Default\000.png">
+                        <collision-poly><point x="0" y="0" /><point x="1" y="0" /><point x="1" y="1" /><point x="0" y="1" /></collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="textVoltar" sid="700000000000144">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Mouse" sid="700000000000145">
+            <plugin id="Mouse" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>ComoJogar.xml</layout>
+        <layout>Creditos.xml</layout>
         <layout>Fase1.xml</layout>
     </layout-folder>
     <event-folder>
+        <event-sheet>Menu.xml</event-sheet>
+        <event-sheet>ComoJogar.xml</event-sheet>
+        <event-sheet>Creditos.xml</event-sheet>
         <event-sheet>Jogo.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="3" />
+        <global-instance type="Mouse" uid="9999" />
     </global-instances>
     <sounds-folder />
     <music-folder />
